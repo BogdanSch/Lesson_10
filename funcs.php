@@ -53,3 +53,22 @@ function funct() {
 }
 for($i = 0; $i < 10; $i++)
     funct(); // 1 2 3 4 5 6 7 8 9 10
+
+//array_map
+
+// function my_case($a) {
+//     return strtoupper($a);
+// }
+
+// $arr = ["M", "a", "r", "y"];
+// $new_arr = array_map("my_case", $arr);
+// print_r($new_arr);
+
+function cube($n)
+{
+   return ($n * $n * $n);
+}
+
+$a = [1, 2, 3];
+$b = array_map("cube", $a);
+print_r($b);
