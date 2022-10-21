@@ -7,7 +7,7 @@ $numbers = [
 function filter_positives($var){
     return $var > 0;
 }
-function reduce_product($mult = 1, $var){
+function reduce_product($mult, $var){
     $mult *= $var;
     return $mult;
 }
