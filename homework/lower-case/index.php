@@ -8,7 +8,7 @@ $phraces = [
 ];
 
 function reduce_array($res, $str){
-    $res .= $str.", ";
+    $res .= $str."-";
     return $res;
 }
 function map_to_lower($string){
@@ -20,5 +20,5 @@ function to_lower($array){
 }
 
 $new_phraces = to_lower($phraces);
-print(str_replace("), ", "", $new_phraces));
+print(str_replace(")-", "", $new_phraces));
 
